@@ -1,14 +1,19 @@
 language: java
 jdk: openjdk11
 
+
 # https://github.com/travis-ci/travis-ci/issues/8408
 before_install:
   - unset _JAVA_OPTIONS
   
 env: PRO_SPECIAL_BUILD='early-access'
 
+matrix :
+  - env : FOLDER=labOne
+  - env : FOLDER=labTwo
+
 install:
-  - cd labOne
+  - cd $FOLDER
   - java pro_wrapper.java version
 
 script:
