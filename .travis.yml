@@ -9,8 +9,9 @@ before_install:
 env: PRO_SPECIAL_BUILD='early-access'
 
 matrix :
-  - env : FOLDER=labOne
-  - env : FOLDER=labTwo
+  include :
+    - env : FOLDER=labOne
+    - env : FOLDER=labTwo
 
 install:
   - cd $FOLDER
