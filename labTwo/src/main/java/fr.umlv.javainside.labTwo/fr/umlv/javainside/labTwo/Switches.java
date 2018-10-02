@@ -13,6 +13,19 @@ public class Switches {
 				return "a lot";
 			default:
 				throw new IllegalArgumentException();
+		}	
+	}
+	
+	public static String intSwitch2(int binary) {
+		switch(binary) {
+			case 0:
+				return "zero";
+			case 10:
+				return "one";
+			case 100:
+				return "a lot";
+			default:
+				throw new IllegalArgumentException();
 		}
 			
 	}
