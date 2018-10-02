@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="labOne/src/main/java/fr.univ.javainside.labOne"/>
-	<classpathentry kind="src" path="labOne/src/test/java/fr.univ.javainside.labOne"/>
 	<classpathentry excluding="module-info.java" kind="src" path="labOne/src/main/java/fr.umlv.javainside.labOne"/>
 	<classpathentry excluding="module-info.java" kind="src" path="labOne/src/test/java/fr.umlv.javainside.labOne"/>
+	<classpathentry excluding="module-info.java" kind="src" path="labTwo/src/main/java/fr.umlv.javainside.labTwo"/>
+	<classpathentry excluding="module-info.java" kind="src" path="labTwo/src/test/java/fr.umlv.javainside.labTwo"/>
+	
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -18,11 +19,7 @@
 	<classpathentry kind="lib" path="labOne/deps/org.junit.jupiter.api.jar"/>
 	<classpathentry kind="lib" path="labOne/deps/org.junit.platform.commons.jar"/>
 	<classpathentry kind="lib" path="labOne/deps/org.opentest4j.jar"/>
-	<classpathentry kind="lib" path="labOne/target/deps/maven-local/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
-	<classpathentry kind="lib" path="labOne/target/deps/maven-local/org/junit/jupiter/junit-jupiter-api/5.2.0/junit-jupiter-api-5.2.0.jar"/>
-	<classpathentry kind="lib" path="labOne/target/deps/maven-local/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar"/>
-	<classpathentry kind="lib" path="labOne/target/deps/maven-local/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar"/>
 	<classpathentry kind="lib" path="labOne/deps/org.openjdk.jmh.generator.jar"/>
 	<classpathentry kind="lib" path="labOne/deps/org.openjdk.jmh.jar"/>
-	<classpathentry kind="output" path="labOne/target/main/exploded/fr.univ.javainside.labOne"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
