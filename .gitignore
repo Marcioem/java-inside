@@ -1,6 +1,11 @@
 # Compiled class file
 *.class
 
+# Intellij
+.idea/
+*.iml
+*.iws
+
 # Log file
 *.log
 
@@ -23,3 +28,4 @@
 hs_err_pid*
 /.metadata/
 
+/bin/

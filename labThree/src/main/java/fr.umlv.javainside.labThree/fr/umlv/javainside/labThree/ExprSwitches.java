@@ -1,14 +1,14 @@
-package fr.umlv.javainside.labTwo;
+package fr.umlv.javainside.labThree;
 
-public class Switches {
+public class ExprSwitches {
 
 	public static enum EnumSwitch {
 		DEBUG, WARNING, INFO, ERROR
 	}
-
+	
 	public static String intSwitch(int binary) {
 		switch(binary) {
-			case 3:
+            case 3:
 			case 0:
 				return "zero";
 			case 1:
@@ -19,10 +19,24 @@ public class Switches {
 				throw new IllegalArgumentException();
 		}	
 	}
+
+    public static String exprIntSwitch(int binary) {
+        switch(binary) {
+            case 3:
+            case 0:
+                return "zero";
+            case 1:
+                return "one";
+            case 2:
+                return "a lot";
+            default:
+                throw new IllegalArgumentException();
+        }
+    }
 	
 	public static String intSwitch2(int binary) {
 		switch(binary) {
-			case 3:
+            case 3:
 			case 0:
 				return "zero";
 			case 10:
@@ -33,6 +47,20 @@ public class Switches {
 				throw new IllegalArgumentException();
 		}
 	}
+
+    public static String exprIntSwitch2(int binary) {
+        switch(binary) {
+            case 3:
+            case 0:
+                return "zero";
+            case 10:
+                return "one";
+            case 100:
+                return "a lot";
+            default:
+                throw new IllegalArgumentException();
+        }
+    }
 
 	public static String StringSwitch(String index) {
 		switch(index) {

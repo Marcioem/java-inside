@@ -5,13 +5,13 @@ jdk: openjdk11
 # https://github.com/travis-ci/travis-ci/issues/8408
 before_install:
   - unset _JAVA_OPTIONS
-  
-env: PRO_SPECIAL_BUILD='early-access'
+
 
 matrix :
   include :
-    - env : FOLDER=labOne
-    - env : FOLDER=labTwo
+    - env : FOLDER=labOne PRO_SPECIAL_BUILD=''
+    - env : FOLDER=labTwo PRO_SPECIAL_BUILD='early-access'
+    - env : FOLDER=labThree PRO_SPECIAL_BUILD='early-access-amber'
 
 install:
   - cd $FOLDER
