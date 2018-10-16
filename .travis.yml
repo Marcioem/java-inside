@@ -12,7 +12,7 @@ matrix :
     - env : FOLDER=labOne PRO_SPECIAL_BUILD=''
     - env : FOLDER=labTwo PRO_SPECIAL_BUILD='early-access'
     - env : FOLDER=labThree PRO_SPECIAL_BUILD='early-access-amber'
-      - env: FOLDER=labFour PRO_SPECIAL_BUILD='early-access-loom'
+    - env: FOLDER=labFour PRO_SPECIAL_BUILD='early-access-loom'
 
 
 install:
