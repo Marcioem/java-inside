@@ -44,10 +44,10 @@ public class ExprSwitchesTest {
 
 	@Test
 	void StringSwitchtest() {
-		assertEquals("zero", ExprSwitches.StringSwitch("foo"));
-		assertEquals("one", ExprSwitches.StringSwitch("bar"));
-		assertEquals("a lot", ExprSwitches.StringSwitch("baz"));
-		assertEquals("zero", ExprSwitches.StringSwitch("viva zorg"));
+		assertEquals("zero", ExprSwitches.stringSwitch("foo"));
+		assertEquals("one", ExprSwitches.stringSwitch("bar"));
+		assertEquals("a lot", ExprSwitches.stringSwitch("baz"));
+		assertEquals("zero", ExprSwitches.stringSwitch("viva zorg"));
 	}
 
 	@Test

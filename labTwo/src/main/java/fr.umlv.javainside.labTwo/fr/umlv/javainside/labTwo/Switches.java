@@ -34,7 +34,7 @@ public class Switches {
 		}
 	}
 
-	public static String StringSwitch(String index) {
+	public static String stringSwitch(String index) {
 		switch(index) {
 			case "viva zorg" :
 			case "foo": return "zero";
