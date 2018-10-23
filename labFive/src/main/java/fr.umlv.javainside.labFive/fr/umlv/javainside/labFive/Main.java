@@ -25,7 +25,7 @@ public class Main {
     }*/
 
     public static String toJSON(Object obj) {
-        return Arrays.stream(obj.getClass().getMethods()).filter(method -> method.getName().startsWith("get"))
+        return Arrays.stream(obj.getClass().getMethods()).filter(method -> method.isAnnotationPresent(JSONProperty.class))
                 .map(e -> "   \"" + Main.propertyName(e.getName()) + "\": \"" + Main.callInvoke(e,obj) + "\"")
                 .collect(Collectors.joining("\n", "{\n", "\n}"));
     }

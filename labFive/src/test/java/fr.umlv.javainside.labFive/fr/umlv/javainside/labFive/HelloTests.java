@@ -21,7 +21,6 @@ class HelloTests {
     assertEquals("{\n" +
             "   \"planet\": \"Vegeta\"\n" +
             "   \"age\": \"400\"\n" +
-            "   \"class\": \"class fr.umlv.javainside.labFive.HelloTests$Alien\"\n" +
             "}",Main.toJSON(aaaaalieen));
     }
 
@@ -31,7 +30,6 @@ class HelloTests {
         assertEquals("{\n" +
                 "   \"firstName\": \"Son\"\n" +
                 "   \"lastName\": \"Goku\"\n" +
-                "   \"class\": \"class fr.umlv.javainside.labFive.HelloTests$Person\"\n" +
                 "}",Main.toJSON(peeeeeeeeeerson));
     }
 
@@ -47,10 +45,12 @@ class HelloTests {
             this.age = age;
         }
 
+        @JSONProperty
         public String getPlanet() {
             return planet;
         }
 
+        @JSONProperty
         public int getAge() {
             return age;
         }
@@ -65,9 +65,12 @@ class HelloTests {
             this.lastName = Objects.requireNonNull(lastName);
         }
 
+        @JSONProperty
         public String getFirstName() {
             return firstName;
         }
+
+        @JSONProperty
         public String getLastName() {
             return lastName;
         }
